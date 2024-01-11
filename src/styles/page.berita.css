@@ -1,0 +1,8 @@
+.bg-header-berita {
+  height: 400px;
+  background: url(../../public/3324136.jpg);
+}
+
+.header-img {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
