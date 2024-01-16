@@ -1,12 +1,13 @@
+import SearchBar from '@/components/SearchBar';
 import Link from 'next/link';
 
 export default function page({ params }) {
   const jenisSurat = ['surat perijinan', 'surat rekomendasi', 'surat keterangan', 'surat khusus']
   return (
     <div class="container-fluid">
-      <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Arsip Desa</h1>
-      </div>
+      <h2 class="h5 fw-bold mb-0 text-gray-800">Arsip Desa</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
+
 
       <div class="d-flex">
         <div class="col-3 mb-4">
@@ -89,52 +90,72 @@ export default function page({ params }) {
             </div>
           </Link>
         </div>
-
       </div>
 
-      <div class="bg-white p-3">
-        <div class="mb-4">
-          <p className="m-0 fs-5 text-black fw-bold text-capitalize">baru saja ditambahkan</p>
-          <p className="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, odit.</p>
+      <div class="mb-4">
+        <h2 class="h5 fw-bold mb-0 text-gray-800">Pengajuan Surat</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
+        <div class="bg-white p-3">
+          <div class="d-flex justify-content-between">
+            <SearchBar />
+            <button type="button" className="btn btn-info d-flex align-items-center" style={{ fontSize: '13px' }}>
+              <i class="fas fa-filter mr-2"></i>
+              <p className="m-0">Filter</p>
+            </button>
+          </div>
+          <table class="table mt-3" style={{ fontSize: '15px' }}>
+            <thead>
+              <tr className="text-uppercase bg-secondary">
+                <th scope="col">no. surat</th>
+                <th scope="col">nama</th>
+                <th scope="col">jenis surat</th>
+                <th scope="col">tanggal</th>
+                <th scope="col">surat</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1198264917238</th>
+                <td>Naufal Zaul Karim</td>
+                <td>Surat Perijinan</td>
+                <td>3 Maret 2023</td>
+                <td><a href="http://">lihat surat</a></td>
+                <td>
+                  <div class="dropdown no-arrow">
+                    <a
+                      class="dropdown-toggle"
+                      href="#"
+                      role="button"
+                      id="dropdownMenuLink"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">
+                        <i class="fas fa-print mr-2 text-gray-400"></i>
+                        Cetak
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fas fa-pen mr-2 text-gray-400"></i>
+                        Ubah
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">
+                        <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
+                        Hapus
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <table class="table" style={{ fontSize: '14px' }} >
-          <thead>
-            <tr className="text-uppercase" style={{ textWrap: 'nowrap' }}>
-              <th scope="col">Nomor Surat</th>
-              <th scope="col">Judul</th>
-              <th scope="col">Jenis Surat</th>
-              <th scope="col">Tanggal Masuk</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">12381982739162</th>
-              <td>Surat perijinan buka usaha</td>
-              <td>Surat perijinan</td>
-              <td>29 April 2023</td>
-              <td className="nav-item dropdown no-arrow">
-                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                  <span class="mr-2 d-none d-lg-inline text-gray-600 small" >
-                    <i class="fas fa-ellipsis-v"></i>
-                  </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
-                    Hapus
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-pen mr-2 text-gray-400"></i>
-                    Ubah
-                  </a>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
-
     </div>
   )
 };

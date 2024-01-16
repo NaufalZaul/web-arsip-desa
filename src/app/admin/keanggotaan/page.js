@@ -32,21 +32,30 @@ export default function page(params) {
               <td>IA</td>
               <td>S1 Teknik Informatika</td>
               <td>2022</td>
-              <td className="nav-item dropdown no-arrow">
-                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                  <span class="mr-2 d-none d-lg-inline text-gray-600 small" >
-                    <i class="fas fa-ellipsis-v"></i>
-                  </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
-                    Hapus
+              <td>
+                <div class="dropdown no-arrow">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                   </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-pen mr-2 text-gray-400"></i>
-                    Ubah
-                  </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-pen mr-2 text-gray-400"></i>
+                      Ubah
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
+                      Hapus
+                    </a>
+                  </div>
                 </div>
               </td>
             </tr>

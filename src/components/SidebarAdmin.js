@@ -49,7 +49,7 @@ export default function SidebarAdmin() {
           </div>
         </div>
       </li>
-      <li class="nav-item">
+      {/* <li class="nav-item">
         <a
           class="nav-link collapsed"
           href="#"
@@ -73,7 +73,7 @@ export default function SidebarAdmin() {
             <a class="collapse-item" href="/admin/cetak_surat">cetak surat</a>
           </div>
         </div>
-      </li>
+      </li> */}
       <li class="nav-item">
         <a
           class="nav-link collapsed" href="/admin/arsip_desa"        >
@@ -87,7 +87,7 @@ export default function SidebarAdmin() {
           href="/admin/pengelolaan"
         >
           <i class="fas fa-folder-open"></i>
-          <span className="fw-normal mx-2" style={{ fontSize: '16px' }}>Kelola Berita</span>
+          <span className="fw-normal mx-2" style={{ fontSize: '16px' }}>Pengelolaan</span>
         </a>
       </li>
 

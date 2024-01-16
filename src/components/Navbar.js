@@ -1,3 +1,6 @@
+"use client";
+import { Link } from "react-router-dom"
+
 export default function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 shadow-sm">
@@ -24,6 +27,25 @@ export default function Navbar() {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        {/* <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item mx-3">
+              <Link class="nav-link active" to="/tentang">Tentang desa</Link>
+            </li>
+            <li class="nav-item mx-3">
+              <Link class="nav-link" to="/layanan">Layanan</Link>
+            </li>
+            <li class="nav-item mx-3">
+              <Link class="nav-link" to="/berita">Berita</Link>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="/login">
+                <button type="submit" className="btn btn-primary px-4" >Login</button>
+              </a>
+            </li>
+          </ul>
+        </div> */}
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item mx-3">
@@ -36,8 +58,8 @@ export default function Navbar() {
               <a class="nav-link" href="/berita">Berita</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="/berita">
-                <button type="submit" className="btn btn-primary px-4">Login</button>
+              <a class="nav-link" href="/login">
+                <button type="submit" className="btn btn-primary px-4" >Login</button>
               </a>
             </li>
           </ul>

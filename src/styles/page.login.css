@@ -1,0 +1,10 @@
+.bg-login {
+  background: #ffffff url(../../public/tp201-sasi-21.jpg) center center/cover
+    no-repeat;
+}
+
+.content-login {
+  background: #ffffff url(../../public/SL-113022-54210-29.jpg) center
+    center/cover;
+  border-radius: 0.35rem 0 0 0.35rem;
+}

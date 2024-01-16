@@ -1,9 +1,7 @@
 export default function Page() {
   return (
-    <div class="p-5">
-
-      <div class="d-flex justify-content-center mt-4">
-
+    <div class="p-5 text-black">
+      <div class="d-flex justify-content-center">
         <div class="border border-end-0 p-4" style={{ width: '40%', background: '#eee' }}>
           <form>
             <div class="">
@@ -24,46 +22,62 @@ export default function Page() {
         </div>
 
         <div class="w-100 border border-start-0 p-4">
-          <h5 className="fw-semibold">Lengkapi formulir sesuai dengan inputan yang tersedia</h5>
+          <h5 className="fw-semibold mb-4">Lengkapi formulir sesuai dengan inputan yang tersedia</h5>
           <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">NIK</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="34314134235245234" />
+            <div class="row mb-3">
+              <div class="col">
+                <label for="nik" class="form-label">NIK</label>
+                <input type="number" class="form-control" id="nik" aria-describedby="emailHelp" placeholder="34314135245234" />
+              </div>
+              <div class="col">
+                <label for="namaLengkap" class="form-label">Nama lengkap</label>
+                <input type="number" class="form-control" id="namaLengkap" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
+              </div>
+              <div class="col">
+                <label for="nomorTelp" class="form-label">No. Telp</label>
+                <input type="number" class="form-control" id="nomorTelp" aria-describedby="emailHelp" placeholder="089128381989" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="agama" class="form-label">Agama</label>
+                <select id="agama" class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                <input type="text" class="form-control" id="pekerjaan" aria-describedby="emailHelp" placeholder="Programmer" />
+              </div>
+              <div class="col">
+                <label for="kewarganegaraan" class="form-label">Kewarganegaraan</label>
+                <select id="kewarganegaraan" class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="alamat" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="alamat" aria-describedby="emailHelp" placeholder="Lorem ipsum dolor sit amet." />
+              </div>
+              <div class="col">
+                <label for="kecamatan" class="form-label">Kecamatan</label>
+                <input type="email" class="form-control" id="kecamatan" aria-describedby="emailHelp" placeholder="Jenangan" />
+              </div>
+              <div class="col">
+                <label for="kabupaten" class="form-label">Kabupaten</label>
+                <input type="email" class="form-control" id="kabupaten" aria-describedby="emailHelp" placeholder="Ponorogo" />
+              </div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Nama lengkap</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Alamat</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Kecamatan</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Kabupaten</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">No. Telp</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Agama</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Pekerjaan</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Kewarganegaraan</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Keperluan pengajuan</label>
+              <label for="keperluan" class="form-label">Keperluan pengajuan</label>
               <div class="form-floating">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: "100px" }}></textarea>
               </div>
