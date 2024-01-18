@@ -1,6 +1,7 @@
-import Page from "./tentang/page";
+import Navbar from "@/components/Navbar";
+import Page from "./beranda/page";
 
-export default function page(params) {
+export default function page() {
   return (
     <>
       <Page />

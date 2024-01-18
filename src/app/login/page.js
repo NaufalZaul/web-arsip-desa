@@ -8,14 +8,14 @@ export default function page({ params }) {
             <p className='text-uppercase'>Pemerintahan Desa Panjeng</p>
           </div>
           <div class="">
-            <h3 className='fw-bold mb-4'>Lorem ipsum, dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aspernatur corporis eius nesciunt rerum error repellat eaque, dolorum sunt praesentium.</p>
+            <h1 className='fw-bold mb-4 '>Lorem ipsum, dolor sit amet</h1>
+            <p className='lh-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aspernatur corporis eius nesciunt rerum error repellat eaque, dolorum sunt praesentium.</p>
           </div>
           <div class=""></div>
         </div>
         <div class="col d-flex flex-column justify-content-around text-black px-5 py-4">
           <div class="">
-            <a class="link-offset-2 link-underline link-underline-opacity-0 d-flex align-items-center" href="/tentang">
+            <a class="link-offset-2 link-underline link-underline-opacity-0 d-flex align-items-center" href="/">
               <i class="fas fa-chevron-left mr-2"></i>
               Kembali ke beranda
             </a>

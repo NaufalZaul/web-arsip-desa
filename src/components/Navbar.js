@@ -13,7 +13,7 @@ export default function Navbar() {
             alt=""
           />
           <div class="text-capitalize fw-bold text-xl" style={{ color: "#0022d6" }}>
-            <p class="m-0 p-0">pusat pelayanan masyarakat desa panjeng</p>
+            <p class="m-0 p-0">pusat pelayanan desa panjeng</p>
           </div>
         </a>
         <button
@@ -49,7 +49,7 @@ export default function Navbar() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item mx-3">
-              <a class="nav-link active" href="/tentang">Tentang desa</a>
+              <a class="nav-link active" href="/beranda">Beranda</a>
             </li>
             <li class="nav-item mx-3">
               <a class="nav-link" href="/layanan">Layanan</a>
@@ -58,10 +58,13 @@ export default function Navbar() {
               <a class="nav-link" href="/berita">Berita</a>
             </li>
             <li class="nav-item mx-3">
+              <a class="nav-link" href="/galeri">Galeri</a>
+            </li>
+            {/* <li class="nav-item mx-3">
               <a class="nav-link" href="/login">
                 <button type="submit" className="btn btn-primary px-4" >Login</button>
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
