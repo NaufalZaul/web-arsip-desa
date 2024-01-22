@@ -57,7 +57,7 @@ export default function NavbarAdmin() {
             aria-expanded="false"
           >
             <span class="mr-2 d-none d-lg-inline text-gray-600 small"
-            >Douglas McGee</span
+            >Administrator</span
             >
             <img
               class="img-profile rounded-circle object-fit-cover"

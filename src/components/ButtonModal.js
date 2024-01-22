@@ -4,6 +4,18 @@ const ButtonModal = {
       <p className="m-0">lihat kegiatan</p>
     </button>
   ),
+  ButtonEditInformasiDesa: () => (
+    <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#editInformasiDesa" style={{ fontSize: '15px' }}>
+      <i class="fas fa-plus mr-2"></i>
+      <p className="m-0">Edit Informasi</p>
+    </button>
+  ),
+  ButtonEditFotoKantor: () => (
+    <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#editFotoKantor" style={{ fontSize: '15px' }}>
+      <i class="fas fa-plus mr-2"></i>
+      <p className="m-0">Edit Foto</p>
+    </button>
+  ),
   ButtonTambahKegiatan: () => (
     <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#tambahKegiatan" style={{ fontSize: '15px' }}>
       <i class="fas fa-plus mr-2"></i>

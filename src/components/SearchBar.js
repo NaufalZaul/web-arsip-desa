@@ -1,6 +1,6 @@
 export default function SearchBar(params) {
   return (
-    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" >
+    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 w-50 navbar-search" >
       <div class="input-group">
         <input
           type="text"

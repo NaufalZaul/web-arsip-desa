@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 
 export default function Page() {
@@ -6,8 +7,8 @@ export default function Page() {
       <Navbar />
       <div class="p-5 text-black">
         <div class="text-center mb-5">
-          <h1 className="fw-bold" style={{ fontSize: '3rem' }}>Pelayanan Desa</h1>
-          <p style={{ fontSize: '1.5rem' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, amet?</p>
+          <h2 className="fw-bold">Pelayanan Desa</h2>
+          <p className="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, amet?</p>
         </div>
         <div class="d-flex justify-content-center shadow-sm rounded-2">
           <div class="border border-end-0 p-4 rounded-start-2" style={{ width: '40%', background: '#eee' }}>
@@ -95,6 +96,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 };

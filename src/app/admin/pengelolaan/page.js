@@ -15,11 +15,6 @@ export default function page({ params }) {
             <div class="d-flex">
               <ButtonModal.ButtonTambahKegiatan />
               <Modal.ModalTambahKegiatan />
-
-              <button type="button" className="btn btn-info d-flex align-items-center" style={{ fontSize: '15px' }}>
-                <i class="fas fa-filter mr-2"></i>
-                <p className="m-0">Filter</p>
-              </button>
             </div>
           </div>
           <table class="table mt-3" style={{ fontSize: '15px' }}>
@@ -141,10 +136,6 @@ export default function page({ params }) {
             <div class="d-flex">
               <ButtonModal.ButtonTambahGaleri />
               <Modal.ModalTambahGaleri />
-              <button type="button" className="btn btn-info d-flex align-items-center" style={{ fontSize: '15px' }}>
-                <i class="fas fa-filter mr-2"></i>
-                <p className="m-0">Filter</p>
-              </button>
             </div>
           </div>
           <table class="table mt-3" style={{ fontSize: '15px' }}>

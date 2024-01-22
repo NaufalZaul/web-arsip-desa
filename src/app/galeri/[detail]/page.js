@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import SliderDetailGaleri from "@/components/SliderDetailGaleri";
+import Sliders from "@/components/Sliders";
 import data from "@/data/data";
 
 export default function page({ params }) {
@@ -20,7 +20,7 @@ export default function page({ params }) {
               <h1>Lorem ipsum dolor sit amet.</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ullam!</p>
               <div class="">
-                <SliderDetailGaleri items={sliderItems} />
+                <Sliders.SliderDetailGaleri items={sliderItems} />
               </div>
             </div>
           ) : null

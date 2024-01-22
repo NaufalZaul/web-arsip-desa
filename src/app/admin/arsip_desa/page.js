@@ -5,13 +5,13 @@ export default function page({ params }) {
   const jenisSurat = ['surat perijinan', 'surat rekomendasi', 'surat keterangan', 'surat khusus']
   return (
     <div class="container-fluid">
-      <h2 class="h5 fw-bold mb-0 text-gray-800">Arsip Desa</h2>
+      <h2 class="h5 fw-bold mb-0 text-black">Arsip Desa</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
 
 
       <div class="d-flex">
         <div class="col-3 mb-4">
-          <Link href="/admin/arsip_desa/[list]" as={`/admin/arsip_desa/surat perijinan`}>
+          <Link href="/admin/arsip_desa/[list]" className='link-offset-2 link-underline link-underline-opacity-0' as={`/admin/arsip_desa/surat perijinan`}>
             <div class="bg-white h-100 py-2 rounded-0">
               <div class="card-body">
                 <div class="no-gutters align-items-center">
@@ -20,7 +20,7 @@ export default function page({ params }) {
                       <p className="mb-1" style={{ fontSize: '14px' }}>Arsip Desa</p>
                       <h5 className="fw-bold text-black" style={{ fontSize: '17px' }}>Surat Perijinan</h5>
                     </div>
-                    <div class="d-flex align-items-end h5 mb-0 font-weight-bold text-gray-800">
+                    <div class="d-flex align-items-end h5 mb-0 font-weight-bold text-black">
                       1000
                       <p className="fw-normal ms-2 mb-0 " style={{ fontSize: '16px' }}>file</p>
                     </div>
@@ -31,7 +31,7 @@ export default function page({ params }) {
           </Link>
         </div>
         <div class="col-3 mb-4">
-          <Link href="/admin/arsip_desa/[list]" as={`/admin/arsip_desa/surat rekomendasi`}>
+          <Link href="/admin/arsip_desa/[list]" className='link-offset-2 link-underline link-underline-opacity-0' as={`/admin/arsip_desa/surat rekomendasi`}>
             <div class="bg-white h-100 py-2 rounded-0">
               <div class="card-body">
                 <div class="no-gutters align-items-center">
@@ -40,7 +40,7 @@ export default function page({ params }) {
                       <p className="mb-1" style={{ fontSize: '14px' }}>Arsip Desa</p>
                       <h5 className="fw-bold text-black" style={{ fontSize: '17px' }}>Surat Rekomendasi</h5>
                     </div>
-                    <div class="d-flex align-items-end h5 mb-0 font-weight-bold text-gray-800">
+                    <div class="d-flex align-items-end h5 mb-0 font-weight-bold text-black">
                       1000
                       <p className="fw-normal ms-2 mb-0 " style={{ fontSize: '16px' }}>file</p>
                     </div>
@@ -51,7 +51,7 @@ export default function page({ params }) {
           </Link>
         </div>
         <div class="col-3 mb-4">
-          <Link href="/admin/arsip_desa/[list]" as={`/admin/arsip_desa/surat keterangan`}>
+          <Link href="/admin/arsip_desa/[list]" className='link-offset-2 link-underline link-underline-opacity-0' as={`/admin/arsip_desa/surat keterangan`}>
             <div class="bg-white h-100 py-2 rounded-0">
               <div class="card-body">
                 <div class="no-gutters align-items-center">
@@ -60,7 +60,7 @@ export default function page({ params }) {
                       <p className="mb-1" style={{ fontSize: '14px' }}>Arsip Desa</p>
                       <h5 className="fw-bold text-black" style={{ fontSize: '17px' }}>Surat Keterangan</h5>
                     </div>
-                    <div class="d-flex align-items-end h5 mb-0 font-weight-bold text-gray-800">
+                    <div class="d-flex align-items-end h5 mb-0 font-weight-bold text-black">
                       1000
                       <p className="fw-normal ms-2 mb-0 " style={{ fontSize: '16px' }}>file</p>
                     </div>
@@ -71,7 +71,7 @@ export default function page({ params }) {
           </Link>
         </div>
         <div class="col-3 mb-4">
-          <Link href="/admin/arsip_desa/[list]" as={`/admin/arsip_desa/surat khusus`}>
+          <Link href="/admin/arsip_desa/[list]" className='link-offset-2 link-underline link-underline-opacity-0' as={`/admin/arsip_desa/surat khusus`}>
             <div class="bg-white h-100 py-2 rounded-0">
               <div class="card-body">
                 <div class="no-gutters align-items-center">
@@ -80,7 +80,7 @@ export default function page({ params }) {
                       <p className="mb-1" style={{ fontSize: '14px' }}>Arsip Desa</p>
                       <h5 className="fw-bold text-black" style={{ fontSize: '17px' }}>Surat Khusus</h5>
                     </div>
-                    <div class="d-flex align-items-end h5 mb-0 font-weight-bold text-gray-800">
+                    <div class="d-flex align-items-end h5 mb-0 font-weight-bold text-black">
                       1000
                       <p className="fw-normal ms-2 mb-0 " style={{ fontSize: '16px' }}>file</p>
                     </div>
@@ -93,15 +93,26 @@ export default function page({ params }) {
       </div>
 
       <div class="mb-4">
-        <h2 class="h5 fw-bold mb-0 text-gray-800">Pengajuan Surat</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
         <div class="bg-white p-3">
-          <div class="d-flex justify-content-between">
-            <SearchBar />
-            <button type="button" className="btn btn-info d-flex align-items-center" style={{ fontSize: '13px' }}>
-              <i class="fas fa-filter mr-2"></i>
-              <p className="m-0">Filter</p>
-            </button>
+          <h2 class="h5 fw-bold mb-0 text-black">Pengajuan Surat</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
+          <div class="text-center my-4">
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 w-50 navbar-search" >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control bg-light border-0 small"
+                  placeholder="Search for..."
+                  aria-label="Search"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-info" type=" button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
           <table class="table mt-3" style={{ fontSize: '15px' }}>
             <thead>
@@ -154,6 +165,27 @@ export default function page({ params }) {
               </tr>
             </tbody>
           </table>
+          <div class="mt-4">
+            <nav aria-label="...">
+              <ul class="pagination justify-content-end mb-0">
+                <li class="page-item disabled">
+                  <a class="page-link" style={{ fontSize: '13px' }}>Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#" style={{ fontSize: '13px' }}>1</a>
+                </li>
+                <li class="page-item" aria-current="page">
+                  <a class="page-link" href="#" style={{ fontSize: '13px' }}>2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" style={{ fontSize: '13px' }}>3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" style={{ fontSize: '13px' }}>Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>

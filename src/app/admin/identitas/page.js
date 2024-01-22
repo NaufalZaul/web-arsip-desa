@@ -1,3 +1,7 @@
+import ButtonModal from "@/components/ButtonModal"
+import Modal from "@/components/Modal"
+
+
 export default function page({ params }) {
   return (
     <div class="container-fluid mb-4">
@@ -10,8 +14,9 @@ export default function page({ params }) {
           <div class="w-100">
             <img src="/gethuk-golan.jpg" className="w-100" alt="" />
           </div>
-          <div class="mt-3 text-end">
-            <button type="button" className="btn btn-primary">Edit Foto</button>
+          <div class="mt-3">
+            <ButtonModal.ButtonEditFotoKantor />
+            <Modal.ModalEditFotoKantor />
           </div>
         </div>
         <div class="col d-flex flex-column justify-content-between bg-white p-3">
@@ -60,8 +65,9 @@ export default function page({ params }) {
               </tbody>
             </table>
           </div>
-          <div class="mt-3 text-end">
-            <button type="button" className="btn btn-primary">Edit Informasi</button>
+          <div class="mt-3">
+            <ButtonModal.ButtonEditInformasiDesa />
+            <Modal.ModalEditInformasiDesa />
           </div>
         </div>
       </div>

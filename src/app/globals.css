@@ -114,10 +114,36 @@ body {
   font-style: normal;
 } */
 
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter&display=swap");
 
 body {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+} */
+
+.nav-user-active,
+.nav-item-user:hover,
+.nav-item-user:is(.nav-user-active) a {
+  background-color: #fff;
+  font-weight: 600;
+  color: #000;
+}
+
+.nav-item-user a {
+  color: #fff;
+}
+
+.bg-teal {
+  background-color: #0d9488;
+}
+.color-teal {
+  color: #0d9488;
+}
+
+.bg-dark-teal {
+  background-color: #115e59;
+}
+.color-dark-teal {
+  color: #115e59;
 }
