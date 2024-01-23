@@ -6,14 +6,19 @@ const ButtonModal = {
   ),
   ButtonEditInformasiDesa: () => (
     <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#editInformasiDesa" style={{ fontSize: '15px' }}>
-      <i class="fas fa-plus mr-2"></i>
+      {/* <i class="fas fa-plus mr-2" ></i> */}
       <p className="m-0">Edit Informasi</p>
     </button>
   ),
   ButtonEditFotoKantor: () => (
     <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#editFotoKantor" style={{ fontSize: '15px' }}>
-      <i class="fas fa-plus mr-2"></i>
+      {/* <i class="fas fa-plus mr-2"></i> */}
       <p className="m-0">Edit Foto</p>
+    </button>
+  ),
+  ButtonTambahPerangkat: () => (
+    <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#tambahPerangkat" style={{ fontSize: '15px' }}>
+      <p className="m-0">Tambah data</p>
     </button>
   ),
   ButtonTambahKegiatan: () => (

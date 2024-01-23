@@ -1,10 +1,23 @@
+import ButtonModal from "@/components/ButtonModal";
+import Modal from "@/components/Modal";
+
 export default function page(params) {
   return (
     <div class="container-fluid">
-      <div class="bg-white p-3">
-        <div class="mb-4">
+      <div class="bg-white p-3 rounded shadow-sm">
+        <div class="">
           <p className="m-0 fs-5 text-black fw-bold text-capitalize">Perangkat Desa Panjeng</p>
-          <p className="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, odit.</p>
+          <p className="">Kelola data perangkat Desa Panjeng</p>
+        </div>
+        <div class="d-flex justify-content-between align-items-center my-4">
+          <form class="d-none d-sm-inline-block form-inline my-2 my-md-0 w-50 navbar-search" >
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Cari surat sesuai dengan nama pengajuan" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <button class="btn btn-primary" type="button" id="button-addon2">Cari surat</button>
+            </div>
+          </form>
+          <ButtonModal.ButtonTambahPerangkat />
+          <Modal.ModalTambahPerangkat />
         </div>
         <table class="table" style={{ fontSize: '13px' }} >
           <thead>

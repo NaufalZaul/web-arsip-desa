@@ -6,25 +6,31 @@ export default function page({ params }) {
   return (
     <div class="container-fluid mb-4">
       <div class="d-flex gap-3">
-        <div class="col-5 d-flex flex-column justify-content-between bg-white p-3">
-          <div class="">
-            <h2 class="h5 fw-bold mb-0 text-black">Foto Kantor Desa</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
+        <div class="col-5 border bg-white rounded shadow-sm p-0">
+          <div class="d-flex justify-content-between align-items-center border-bottom px-3 py-2" style={{ backgroundColor: '#f3f4f6' }}>
+            <div class="">
+              <h5 class="fw-bold mb-0 text-black">Foto Kantor Desa</h5>
+              <p className="m-0">Ubah foto Kantor Desa Panjeng</p>
+            </div>
+            <div class="">
+              <ButtonModal.ButtonEditFotoKantor />
+              <Modal.ModalEditFotoKantor />
+            </div>
           </div>
-          <div class="w-100">
-            <img src="/gethuk-golan.jpg" className="w-100" alt="" />
-          </div>
-          <div class="mt-3">
-            <ButtonModal.ButtonEditFotoKantor />
-            <Modal.ModalEditFotoKantor />
+          <div class="w-100 p-3">
+            <img src="/gethuk-golan.jpg" className="w-100 rounded" alt="" />
           </div>
         </div>
-        <div class="col d-flex flex-column justify-content-between bg-white p-3">
-          <div class="">
-            <h2 class="h5 fw-bold mb-0 text-black">Tentang Desa</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
+        <div class="col border bg-white rounded shadow-sm p-0">
+          <div class="d-flex justify-content-between align-items-center border-bottom px-3 py-2" style={{ backgroundColor: '#f3f4f6' }}>
+            <div class="">
+              <h5 class="fw-bold mb-0 text-black">Tentang Desa</h5>
+              <p className="m-0">Ubah informasi Desa Panjeng</p>
+            </div>
+            <ButtonModal.ButtonEditInformasiDesa />
+            <Modal.ModalEditInformasiDesa />
           </div>
-          <div class="">
+          <div class="p-3">
             <table class="table" >
               <tbody>
                 <tr>
@@ -64,10 +70,6 @@ export default function page({ params }) {
                 </tr>
               </tbody>
             </table>
-          </div>
-          <div class="mt-3">
-            <ButtonModal.ButtonEditInformasiDesa />
-            <Modal.ModalEditInformasiDesa />
           </div>
         </div>
       </div>

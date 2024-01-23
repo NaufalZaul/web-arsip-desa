@@ -77,6 +77,38 @@ const Modal = {
       </div>
     </div>
   ),
+  ModalTambahPerangkat: () => (
+    <div class="modal fade" id="tambahPerangkat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-3">
+                <label for="namaKegiatan" class="form-label">Nama Kegiatan</label>
+                <input class="form-control" type="text" id="namaKegiatan" />
+              </div>
+              <div class="mb-3">
+                <label for="tempatKegiatan" class="form-label">Tempat Kegiatan</label>
+                <input class="form-control" type="text" id="tempatKegiatan" />
+              </div>
+              <div class="mb-3">
+                <label for="tanggalKegiatan" class="form-label">Tanggal Pelaksanaan</label>
+                <input class="form-control" type="date" id="tanggalKegiatan" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  ),
   ModalTambahKegiatan: () => (
     <div class="modal fade" id="tambahKegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">

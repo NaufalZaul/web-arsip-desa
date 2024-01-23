@@ -9,8 +9,8 @@ export default function page({ params }) {
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
 
 
-      <div class="d-flex">
-        <div class="col-3 mb-4">
+      <div class="d-flex w-100">
+        <div class="col p-0 mb-4 me-1">
           <Link href="/admin/arsip_desa/[list]" className='link-offset-2 link-underline link-underline-opacity-0' as={`/admin/arsip_desa/surat perijinan`}>
             <div class="bg-white h-100 py-2 rounded-0">
               <div class="card-body">
@@ -30,7 +30,7 @@ export default function page({ params }) {
             </div>
           </Link>
         </div>
-        <div class="col-3 mb-4">
+        <div class="col p-0 mb-4 me-1">
           <Link href="/admin/arsip_desa/[list]" className='link-offset-2 link-underline link-underline-opacity-0' as={`/admin/arsip_desa/surat rekomendasi`}>
             <div class="bg-white h-100 py-2 rounded-0">
               <div class="card-body">
@@ -50,7 +50,7 @@ export default function page({ params }) {
             </div>
           </Link>
         </div>
-        <div class="col-3 mb-4">
+        <div class="col p-0 mb-4 me-1">
           <Link href="/admin/arsip_desa/[list]" className='link-offset-2 link-underline link-underline-opacity-0' as={`/admin/arsip_desa/surat keterangan`}>
             <div class="bg-white h-100 py-2 rounded-0">
               <div class="card-body">
@@ -70,7 +70,7 @@ export default function page({ params }) {
             </div>
           </Link>
         </div>
-        <div class="col-3 mb-4">
+        <div class="col p-0 mb-4">
           <Link href="/admin/arsip_desa/[list]" className='link-offset-2 link-underline link-underline-opacity-0' as={`/admin/arsip_desa/surat khusus`}>
             <div class="bg-white h-100 py-2 rounded-0">
               <div class="card-body">
@@ -92,100 +92,88 @@ export default function page({ params }) {
         </div>
       </div>
 
-      <div class="mb-4">
-        <div class="bg-white p-3">
-          <h2 class="h5 fw-bold mb-0 text-black">Pengajuan Surat</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
-          <div class="text-center my-4">
-            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 w-50 navbar-search" >
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control bg-light border-0 small"
-                  placeholder="Search for..."
-                  aria-label="Search"
-                  aria-describedby="basic-addon2"
-                />
-                <div class="input-group-append">
-                  <button class="btn btn-info" type=" button">
-                    <i class="fas fa-search fa-sm"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <table class="table mt-3" style={{ fontSize: '15px' }}>
-            <thead>
-              <tr className="text-uppercase bg-secondary">
-                <th scope="col">no. surat</th>
-                <th scope="col">nama</th>
-                <th scope="col">jenis surat</th>
-                <th scope="col">tanggal</th>
-                <th scope="col">surat</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1198264917238</th>
-                <td>Naufal Zaul Karim</td>
-                <td>Surat Perijinan</td>
-                <td>3 Maret 2023</td>
-                <td><a href="http://">lihat surat</a></td>
-                <td>
-                  <div class="dropdown no-arrow">
-                    <a
-                      class="dropdown-toggle"
-                      href="#"
-                      role="button"
-                      id="dropdownMenuLink"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+      <div class="bg-white rounded shadow-sm mb-4 p-3">
+        <h2 class="h5 fw-bold mb-0 text-black">Pengajuan Surat</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
+        <div class="text-center my-4">
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 w-50 navbar-search" >
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Cari surat sesuai dengan nama pengajuan" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <button class="btn btn-primary" type="button" id="button-addon2">Cari surat</button>
+            </div>
+          </form>
+        </div>
+        <table class="table mt-3" style={{ fontSize: '15px' }}>
+          <thead>
+            <tr className="text-uppercase bg-secondary">
+              <th scope="col">no. surat</th>
+              <th scope="col">nama</th>
+              <th scope="col">jenis surat</th>
+              <th scope="col">tanggal</th>
+              <th scope="col">surat</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1198264917238</th>
+              <td>Naufal Zaul Karim</td>
+              <td>Surat Perijinan</td>
+              <td>3 Maret 2023</td>
+              <td><a href="http://">lihat surat</a></td>
+              <td>
+                <div class="dropdown no-arrow">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-print mr-2 text-gray-400"></i>
+                      Cetak
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">
-                        <i class="fas fa-print mr-2 text-gray-400"></i>
-                        Cetak
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <i class="fas fa-pen mr-2 text-gray-400"></i>
-                        Ubah
-                      </a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">
-                        <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
-                        Hapus
-                      </a>
-                    </div>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-pen mr-2 text-gray-400"></i>
+                      Ubah
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
+                      Hapus
+                    </a>
                   </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="mt-4">
-            <nav aria-label="...">
-              <ul class="pagination justify-content-end mb-0">
-                <li class="page-item disabled">
-                  <a class="page-link" style={{ fontSize: '13px' }}>Previous</a>
-                </li>
-                <li class="page-item active">
-                  <a class="page-link" href="#" style={{ fontSize: '13px' }}>1</a>
-                </li>
-                <li class="page-item" aria-current="page">
-                  <a class="page-link" href="#" style={{ fontSize: '13px' }}>2</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#" style={{ fontSize: '13px' }}>3</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#" style={{ fontSize: '13px' }}>Next</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="my-4">
+          <nav aria-label="...">
+            <ul class="pagination justify-content-end mb-0">
+              <li class="page-item disabled">
+                <a class="page-link" style={{ fontSize: '13px' }}>Previous</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#" style={{ fontSize: '13px' }}>1</a>
+              </li>
+              <li class="page-item" aria-current="page">
+                <a class="page-link" href="#" style={{ fontSize: '13px' }}>2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" style={{ fontSize: '13px' }}>3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" style={{ fontSize: '13px' }}>Next</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
