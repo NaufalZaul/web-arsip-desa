@@ -19,7 +19,7 @@ export default function page(params) {
                 <Link class="link-offset-2 link-underline link-underline-opacity-0 p-0 text-black" href="/kegiatan/[detail]" as={`/galeri/${key}`}>
                   <div class="col h-100 p-0">
                     <div class="p-1">
-                      <img src="/gethuk-golan.jpg" class="card-img-top rounded" alt="..." />
+                      <img src={val.foto} height={200} class="card-img-top rounded object-fit-cover" alt="..." />
                       <div class="py-3 text-start">
                         <p className="fw-bold p-0 mb-2" style={{ fontSize: '20px' }}>{val.judul}</p>
                         <p class="card-text" style={{ fontSize: '15px' }}>{val.desk}</p>

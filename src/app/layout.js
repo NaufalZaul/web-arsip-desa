@@ -1,6 +1,5 @@
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Navbar from '@/components/Navbar';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,10 +23,15 @@ export default function RootLayout({ children }) {
         <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
         <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="styleseet" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+
       </head>
       <body>
+
         {/* <body className={inter.className}> */}
         {children}
+
         <script src="/vendor/jquery/jquery.min.js"></script>
         <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>

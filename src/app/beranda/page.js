@@ -6,6 +6,9 @@ import '../../styles/page.beranda.css';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import perangkatDesa from "@/data/dataPerangkat";
+import data from "@/data/data";
+import Link from 'next/link';
 
 
 export default function Page() {
@@ -37,16 +40,16 @@ export default function Page() {
         </div>
       </div>
       <div class="min-vh-100 p-5 text-black">
-        <div class="min-vh-100 text-black text-center p-5">
+        <div data-aos="fade-up" data-aosduration="3000" class="min-vh-100 text-black text-center p-5">
           <h1 className="fw-bold color-teal link-offset-3 border-bottom pb-2">Pengumuman</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, expedita?</p>
           <div class="my-5">
-            <Sliders.SliderPengumuman items={sliderItems} />
+            <Sliders.SliderPengumuman items={data} />
           </div>
         </div>
         <div data-aos="fade-right" class="row w-100 justify-content-center" style={{ marginBottom: '10rem' }}>
           <div class="col-5">
-            <img src="/gethuk-golan.jpg" className="w-100 rounded shadow" alt="" />
+            <img src="/IMG_20161129_165426.jpg" className="w-100 rounded shadow object-fit-cover" alt="" style={{ maxHeight: '350px' }} />
           </div>
           <div class="col-5 ms-5 d-flex flex-column justify-content-center ">
             <span className="text-uppercase mb-2 text-primary">seputar informasi</span>
@@ -57,20 +60,20 @@ export default function Page() {
         <div data-aos="fade-left" class="row w-100 justify-content-center" style={{ marginBottom: '10rem' }}>
           <div class="col-5 me-5 d-flex flex-column justify-content-center ">
             <span className="text-uppercase mb-2 text-primary">seputar informasi</span>
-            <h2 className="fw-bold color-teal">Visi</h2>
+            <h2 className="fw-bold color-teal">Visi Desa Panjeng</h2>
             <p className="p-0 my-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate culpa repudiandae soluta sed exercitationem tempora, autem dignissimos iste. Praesentium, laborum. Iusto eius laudantium rem cum exercitationem asperiores dolorem commodi autem. Provident necessitatibus similique atque quas nemo quae! Eligendi ipsa ipsum voluptatibus dolor illum molestiae tempora commodi molestias, excepturi blanditiis.</p>
           </div>
           <div class="col-5">
-            <img src="/gethuk-golan.jpg" className="w-100 rounded shadow" alt="" />
+            <img src="/Rapat Persiapan Sosialisasi Online System TOSKA Suban Pajak Jakarta Pusat.jpeg" className="w-100 rounded shadow object-fit-cover" alt="" style={{ maxHeight: '350px' }} />
           </div>
         </div>
         <div data-aos="fade-right" class="row w-100 justify-content-center" style={{ marginBottom: '10rem' }}>
           <div class="col-5">
-            <img src="/gethuk-golan.jpg" className="w-100 rounded shadow" alt="" />
+            <img src="/KKN BBM 67 DAY 22.jpeg" className="w-100 rounded shadow object-fit-cover" alt="" style={{ maxHeight: '350px' }} />
           </div>
           <div class="col-5 ms-5 d-flex flex-column justify-content-center ">
             <span className="text-uppercase mb-2 text-primary">seputar informasi</span>
-            <h2 className="fw-bold color-teal">Misi</h2>
+            <h2 className="fw-bold color-teal">Misi Desa Panjeng</h2>
             <p className="p-0 my-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate culpa repudiandae soluta sed exercitationem tempora, autem dignissimos iste. Praesentium, laborum. Iusto eius laudantium rem cum exercitationem asperiores dolorem commodi autem. Provident necessitatibus similique atque quas nemo quae! Eligendi ipsa ipsum voluptatibus dolor illum molestiae tempora commodi molestias, excepturi blanditiis.</p>
           </div>
         </div>
@@ -80,75 +83,61 @@ export default function Page() {
         <h1 className="fw-bold color-teal border-bottom pb-2">Perangkat Desa</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, expedita?</p>
         <div class="my-5">
-          <Sliders.SliderPerangkat items={sliderItems} />
+          <Sliders.SliderPerangkat items={perangkatDesa} />
         </div>
       </div>
 
       <div class="min-vh-100 text-black text-center p-5">
         <h1 className="fw-bold color-teal border-bottom pb-2">Berita Desa</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, expedita?</p>
-        <div class="row grid-cols-4 justify-content-center gap-4 my-5">
-          <div data-aos="zoom-in" data-aos-duration="500" class="card p-0" style={{ width: "18rem" }}>
-            <img src="/gethuk-golan.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="800" class="card p-0" style={{ width: "18rem" }}>
-            <img src="/gethuk-golan.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="1200" class="card p-0" style={{ width: "18rem" }}>
-            <img src="/gethuk-golan.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div data-aos="zoom-in" data-aos-duration="1500" class="card p-0" style={{ width: "18rem" }}>
-            <img src="/gethuk-golan.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
         <div class="">
-          <a href="/berita">
-            <button type="button" className="btn btn-primary px-4 shadow-sm">Lihat Lainnya</button>
-          </a>
+
+          <div class="row row-cols-lg-4 mt-3">
+            {
+              data.map((val, key) => (key < 4) && (
+                <Link data-aos="zoom-in" data-aos-duration="500 " class="link-offset-2 link-underline link-underline-opacity-0 p-0 text-black" href="/kegiatan/[detail]" as={`/berita/${key}`}>
+                  <div class="col h-100 p-0">
+                    <div class="p-1">
+                      <img src={val.foto} height={200} class="card-img-top object-fit-cover rounded" alt="..." />
+                      <div class="py-3 text-start">
+                        <p className="fw-bold p-0 mb-2" style={{ fontSize: '20px' }}>{val.judul}</p>
+                        <p class="card-text" style={{ fontSize: '15px' }}>{val.desk}</p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))
+            }
+          </div>
+          <div class="mt-4">
+            <a href="/berita">
+              <button type="button" className="btn btn-primary px-4 shadow-sm">Lihat Lainnya</button>
+            </a>
+          </div>
         </div>
       </div>
+
       <div class="min-vh-100 text-black text-center p-5">
         <h1 className="fw-bold color-teal border-bottom pb-2 color-teal border-bottom pb-2">Galeri Desa</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, nesciunt?</p>
-        <div class="row grid-cols-4 justify-content-center gap-4 my-5">
-          <div data-aos="zoom-out" data-aos-duration="500" class="card p-0" style={{ width: "18rem" }}>
-            <img src="/gethuk-golan.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div data-aos="zoom-out" data-aos-duration="800" class="card p-0" style={{ width: "18rem" }}>
-            <img src="/gethuk-golan.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div data-aos="zoom-out" data-aos-duration="1200" class="card p-0" style={{ width: "18rem" }}>
-            <img src="/gethuk-golan.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div data-aos="zoom-out" data-aos-duration="1500" class="card p-0" style={{ width: "18rem" }}>
-            <img src="/gethuk-golan.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
+        <div class="row row-cols-lg-4 mt-3">
+          {
+            data.map((val, key) => (key < 4) && (
+              <Link data-aos="zoom-out" data-aos-duration="500" class="link-offset-2 link-underline link-underline-opacity-0 p-0 text-black" href="/kegiatan/[detail]" as={`/berita/${key}`}>
+                <div class="col h-100 p-0">
+                  <div class="p-1">
+                    <img src={val.foto} height={200} class="card-img-top object-fit-cover rounded" alt="..." />
+                    <div class="py-3 text-start">
+                      <p className="fw-bold p-0 mb-2" style={{ fontSize: '20px' }}>{val.judul}</p>
+                      <p class="card-text" style={{ fontSize: '15px' }}>{val.desk}</p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))
+          }
         </div>
-        <div class="">
+        <div class="mt-4">
           <a href="/galeri">
             <button type="button" className="btn btn-primary px-4 shadow-sm">Lihat Lainnya</button>
           </a>

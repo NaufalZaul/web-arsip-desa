@@ -1,4 +1,5 @@
 .bg-header-beranda {
-  background: #ffffff url(../../public/IMG_20161129_165426.jpg) center
-    center/cover no-repeat;
+  background: #ffffff
+    url("../../public/Rapat Persiapan Sosialisasi Online System TOSKA Suban Pajak Jakarta Pusat.jpeg")
+    center center/cover no-repeat;
 }

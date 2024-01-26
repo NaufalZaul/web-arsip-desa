@@ -10,7 +10,7 @@ export default function page({ params }) {
           data.map((val, key) => (key == params.detail) ? (
             <div class="text-black">
               <div class="">
-                <img src="/gethuk-golan.jpg" className="w-100 object-fit-cover" height={450} alt="" />
+                <img src={val.foto} className="w-100 object-fit-cover" height={450} alt="" />
               </div>
               <div>
                 <p className="fw-bold py-3 mb-0" style={{ fontSize: '17px' }}>Diterbitkan pada {val.publikasi}</p>
