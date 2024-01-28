@@ -52,16 +52,6 @@ export default function Navbar() {
             ${handleActiveMenu('/galeri')}`} style={{ width: '150px' }}>
               <a class="nav-link px-3" href="/galeri">Galeri</a>
             </li>
-            {/* 
-            <li class={`nav-item text-center border-start 
-            ${handleActiveMenu('/pengumuman')}`} style={{ width: '150px' }}>
-              <a class="nav-link px-3" href="/pengumuman">Pengumuman</a>
-            </li>
-            <li class="nav-item mx-3">
-              <a class="nav-link" href="/login">
-                <button type="submit" className="btn btn-primary px-4" >Login</button>
-              </a>
-            </li> */}
           </ul>
         </div >
       </div >

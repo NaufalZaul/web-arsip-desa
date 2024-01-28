@@ -40,38 +40,38 @@ export default function Page() {
         </div>
       </div>
       <div class="min-vh-100 p-5 text-black">
-        <div data-aos="fade-up" data-aosduration="3000" class="min-vh-100 text-black text-center p-5">
+        <div class="min-vh-100 text-black text-center p-1 p-lg-5">
           <h1 className="fw-bold color-teal link-offset-3 border-bottom pb-2">Pengumuman</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, expedita?</p>
           <div class="my-5">
             <Sliders.SliderPengumuman items={data} />
           </div>
         </div>
-        <div data-aos="fade-right" class="row w-100 justify-content-center" style={{ marginBottom: '10rem' }}>
-          <div class="col-5">
+        <div class="profil" style={{ marginBottom: '10rem' }}>
+          <div class="profil-img">
             <img src="/IMG_20161129_165426.jpg" className="w-100 rounded shadow object-fit-cover" alt="" style={{ maxHeight: '350px' }} />
           </div>
-          <div class="col-5 ms-5 d-flex flex-column justify-content-center ">
+          <div class="profil-desk d-flex flex-column justify-content-center ">
             <span className="text-uppercase mb-2 text-primary">seputar informasi</span>
             <h2 className="fw-bold color-teal">Profil Desa Panjeng</h2>
             <p className="p-0 my-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate culpa repudiandae soluta sed exercitationem tempora, autem dignissimos iste. Praesentium, laborum. Iusto eius laudantium rem cum exercitationem asperiores dolorem commodi autem. Provident necessitatibus similique atque quas nemo quae! Eligendi ipsa ipsum voluptatibus dolor illum molestiae tempora commodi molestias, excepturi blanditiis.</p>
           </div>
         </div>
-        <div data-aos="fade-left" class="row w-100 justify-content-center" style={{ marginBottom: '10rem' }}>
-          <div class="col-5 me-5 d-flex flex-column justify-content-center ">
+        <div class="visi" style={{ marginBottom: '10rem' }}>
+          <div class="visi-desk d-flex flex-column justify-content-center ">
             <span className="text-uppercase mb-2 text-primary">seputar informasi</span>
             <h2 className="fw-bold color-teal">Visi Desa Panjeng</h2>
             <p className="p-0 my-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate culpa repudiandae soluta sed exercitationem tempora, autem dignissimos iste. Praesentium, laborum. Iusto eius laudantium rem cum exercitationem asperiores dolorem commodi autem. Provident necessitatibus similique atque quas nemo quae! Eligendi ipsa ipsum voluptatibus dolor illum molestiae tempora commodi molestias, excepturi blanditiis.</p>
           </div>
-          <div class="col-5">
+          <div class="visi-img">
             <img src="/Rapat Persiapan Sosialisasi Online System TOSKA Suban Pajak Jakarta Pusat.jpeg" className="w-100 rounded shadow object-fit-cover" alt="" style={{ maxHeight: '350px' }} />
           </div>
         </div>
-        <div data-aos="fade-right" class="row w-100 justify-content-center" style={{ marginBottom: '10rem' }}>
-          <div class="col-5">
+        <div class="misi" style={{ marginBottom: '10rem' }}>
+          <div class="misi-img">
             <img src="/KKN BBM 67 DAY 22.jpeg" className="w-100 rounded shadow object-fit-cover" alt="" style={{ maxHeight: '350px' }} />
           </div>
-          <div class="col-5 ms-5 d-flex flex-column justify-content-center ">
+          <div class="misi-desk d-flex flex-column justify-content-center ">
             <span className="text-uppercase mb-2 text-primary">seputar informasi</span>
             <h2 className="fw-bold color-teal">Misi Desa Panjeng</h2>
             <p className="p-0 my-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate culpa repudiandae soluta sed exercitationem tempora, autem dignissimos iste. Praesentium, laborum. Iusto eius laudantium rem cum exercitationem asperiores dolorem commodi autem. Provident necessitatibus similique atque quas nemo quae! Eligendi ipsa ipsum voluptatibus dolor illum molestiae tempora commodi molestias, excepturi blanditiis.</p>
@@ -95,8 +95,8 @@ export default function Page() {
           <div class="row row-cols-lg-4 mt-3">
             {
               data.map((val, key) => (key < 4) && (
-                <Link data-aos="zoom-in" data-aos-duration="500 " class="link-offset-2 link-underline link-underline-opacity-0 p-0 text-black" href="/kegiatan/[detail]" as={`/berita/${key}`}>
-                  <div class="col h-100 p-0">
+                <Link class="link-offset-2 link-underline link-underline-opacity-0 p-0 text-black" href=" / kegiatan / [detail]" as={`/berita/${key}`}>
+                  <div div class="col h-100 p-0" >
                     <div class="p-1">
                       <img src={val.foto} height={200} class="card-img-top object-fit-cover rounded" alt="..." />
                       <div class="py-3 text-start">
@@ -115,7 +115,7 @@ export default function Page() {
             </a>
           </div>
         </div>
-      </div>
+      </div >
 
       <div class="min-vh-100 text-black text-center p-5">
         <h1 className="fw-bold color-teal border-bottom pb-2 color-teal border-bottom pb-2">Galeri Desa</h1>
@@ -123,7 +123,7 @@ export default function Page() {
         <div class="row row-cols-lg-4 mt-3">
           {
             data.map((val, key) => (key < 4) && (
-              <Link data-aos="zoom-out" data-aos-duration="500" class="link-offset-2 link-underline link-underline-opacity-0 p-0 text-black" href="/kegiatan/[detail]" as={`/berita/${key}`}>
+              <Link class="link-offset-2 link-underline link-underline-opacity-0 p-0 text-black" href="/kegiatan/[detail]" as={`/berita/${key}`}>
                 <div class="col h-100 p-0">
                   <div class="p-1">
                     <img src={val.foto} height={200} class="card-img-top object-fit-cover rounded" alt="..." />

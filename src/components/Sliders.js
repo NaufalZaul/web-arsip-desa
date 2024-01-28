@@ -49,7 +49,7 @@ const Sliders = {
     return (
       <Splide options={{
         type: 'loop',
-        perPage: 3,
+        perPage: 1,
         autoplay: true,
         padding: '3rem',
         pagination: false,

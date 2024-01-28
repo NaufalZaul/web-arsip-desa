@@ -3,3 +3,45 @@
     url("../../public/Rapat Persiapan Sosialisasi Online System TOSKA Suban Pajak Jakarta Pusat.jpeg")
     center center/cover no-repeat;
 }
+.profil,
+.visi,
+.misi {
+  display: flex;
+  justify-content: space-around;
+}
+.profil-img,
+.visi-desk,
+.misi-img {
+  width: 40%;
+}
+.profil-desk,
+.visi-img,
+.misi-desk {
+  width: 45%;
+}
+@media screen and (width <= 500px) {
+  .profil,
+  .misi {
+    display: flex;
+    flex-direction: column;
+  }
+  .visi {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .profil-img,
+  .profil-desk,
+  .visi-img,
+  .visi-desk,
+  .misi-img,
+  .misi-desk {
+    width: 100%;
+    margin-left: 0;
+  }
+  .profil-desk,
+  .visi-desk,
+  .misi-desk {
+    margin-top: 2rem;
+    text-align: justify;
+  }
+}
