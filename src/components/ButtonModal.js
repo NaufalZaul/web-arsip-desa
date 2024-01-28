@@ -30,10 +30,21 @@ const ButtonModal = {
       Tambah data
     </button>
   ),
+  ButtonEditKegiatan: () => (
+    <button type="button" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#editKegiatan" style={{ fontSize: '15px' }}>
+      <i class="fas fa-pen mr-2 text-gray-400"></i>
+      Edit
+    </button>
+  ),
   ButtonTambahGaleri: () => (
-    <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#tambahGaleri" style={{ fontSize: '15px' }}>
-      <i class="fas fa-plus mr-2"></i>
-      <p className="m-0">Tambah</p>
+    <button type="button" className="btn btn-info mr-2 px-3" data-bs-toggle="modal" data-bs-target="#tambahGaleri" style={{ fontSize: '15px' }}>
+      Tambah data
+    </button>
+  ),
+  ButtonEditGaleri: () => (
+    <button type="button" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#editGaleri" style={{ fontSize: '15px' }}>
+      <i class="fas fa-pen mr-2 text-gray-400"></i>
+      Edit
     </button>
   ),
 }

@@ -1,18 +1,25 @@
 const Modal = {
   ModalReview: () => (
     <div class="modal fade" id="review" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-6 fw-bold text-capitalize" id="exampleModalLabel">deskripsi kegiatan desa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style={{ fontSize: '15px' }}></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="modal-body p-4">
+            <div class="">
+              <img src="/Suasana Sosialisasi PSN.jpeg" height={300} className="w-100 object-fit-cover rounded" alt="" />
+            </div>
+            <div class="">
+              <h3 className="fw-bold my-2">Lorem ipsum dolor sit amet.</h3>
+              <div className="d-flex align-items-center mb-3">
+                <p className="mb-0">23/06/2024</p>
+                <i class="fas fa-circle mx-2" style={{ fontSize: '7px' }}></i>
+                <p className="mb-0">TPS Panjeng</p>
+              </div>
+              <article className="" style={{ fontSize: '17px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rerum eaque perspiciatis est eius possimus fugiat soluta dolor, aliquid quaerat non laboriosam nemo fuga enim. Quaerat laudantium suscipit saepe dolore dicta error quibusdam totam quidem, quasi voluptate animi adipisci repellat harum aspernatur dolor aut laborum consequatur esse vitae sint numquam sapiente sed quas. Sit necessitatibus ea incidunt, esse mollitia minus dolore eius officia reiciendis et fuga quo vero nisi distinctio libero sint excepturi maxime consequatur ratione atque earum deleniti odio. Saepe neque ea dolorem, asperiores maiores iure praesentium dicta voluptates, aspernatur, dolores mollitia rem cupiditate. Natus qui illum dignissimos adipisci?</article>
+            </div>
           </div>
         </div>
       </div>
@@ -20,31 +27,52 @@ const Modal = {
   ),
   ModalEditInformasiDesa: () => (
     <div class="modal fade" id="editInformasiDesa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-black">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-6 fw-bold text-capitalize" id="exampleModalLabel">informasi desa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style={{ fontSize: '15px' }}></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body px-5 py-3">
+            <div class="border-bottom mb-3 py-2">
+              <h2 className="fw-bold">Data Desa Panjeng</h2>
+              <p>Masukkan data sesuai dengan data Desa Panjeng!</p>
+            </div>
             <form action="">
-              <div class="mb-3">
-                <label for="namaKegiatan" class="form-label">Nama Kegiatan</label>
-                <input class="form-control" type="text" id="namaKegiatan" />
+              <p className="fw-bold mb-2">Informasi Diri</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="namaDesa" placeholder="Edit Nama Desa" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="namaKecamatan" placeholder="Edit Nama Kecamatan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="tempatKegiatan" class="form-label">Tempat Kegiatan</label>
-                <input class="form-control" type="text" id="tempatKegiatan" />
+              <p className="fw-bold mb-2">Tempat Tanggal Lahir</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="namaKabupaten" placeholder="Edit Nama Kabupaten" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="kepalaDesa" placeholder="Edit Nama Kepala Desa" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="tanggalKegiatan" class="form-label">Tanggal Pelaksanaan</label>
-                <input class="form-control" type="date" id="tanggalKegiatan" />
+              <p className="fw-bold mb-2">Tentang Pekerjaan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="luasDesa" placeholder="Edit Luas Desa" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="jumlahRT" placeholder="Edit Jumlah RT" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="number" id="jumlahRW" placeholder="Edit Jumlah RW" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
               </div>
             </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="text-end my-4">
+              <button type="button" class="btn btn-primary px-4 shadow-sm">Simpan data</button>
+            </div>
           </div>
         </div>
       </div>
@@ -233,38 +261,91 @@ const Modal = {
   ),
   ModalTambahKegiatan: () => (
     <div class="modal fade" id="tambahKegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-black">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambahkan Kegiatan</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-6 fw-bold text-capitalize" id="exampleModalLabel">kegiatan desa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style={{ fontSize: '15px' }}></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body px-5 py-3">
+            <div class="border-bottom mb-3 py-2">
+              <h2 className="fw-bold">Publikasi Kegiatan Desa Panjeng</h2>
+              <p>Masukkan data sesuai dengan data pribadi perangkat Desa Panjeng!</p>
+            </div>
             <form action="">
-              <div class="mb-3">
-                <label for="formFile" class="form-label">Masukkan Foto Kegiatan</label>
-                <input class="form-control" type="file" id="formFile" />
+              <p className="fw-bold mb-2">Foto Kegiatan dan Judul Kegiatan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="file" id="formFile" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="namaLengkap" placeholder="Judul Kegiatan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="namaKegiatan" class="form-label">Nama Kegiatan</label>
-                <input class="form-control" type="text" id="namaKegiatan" />
+              <p className="fw-bold mb-2">Tempat dan Tanggal Pelaksanaan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="tempatLahir" placeholder="Tempat Pelaksanaan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="date" id="tanggalLahir" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="tempatKegiatan" class="form-label">Tempat Kegiatan</label>
-                <input class="form-control" type="text" id="tempatKegiatan" />
-              </div>
-              <div class="mb-3">
-                <label for="tanggalKegiatan" class="form-label">Tanggal Pelaksanaan</label>
-                <input class="form-control" type="date" id="tanggalKegiatan" />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <p className="fw-bold mb-2">Deskripsi Kegiatan</p>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: "100px" }}></textarea>
+                <label for="floatingTextarea2"></label>
               </div>
             </form>
+            <div class="text-end my-4">
+              <button type="button" class="btn btn-primary px-4 shadow-sm">Simpan data</button>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Tambahkan</button>
+        </div>
+      </div>
+    </div>
+  ),
+  ModalEditKegiatan: () => (
+    <div class="modal fade" id="editKegiatan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-black">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6 fw-bold text-capitalize" id="exampleModalLabel">kegiatan desa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style={{ fontSize: '15px' }}></button>
+          </div>
+          <div class="modal-body px-5 py-3">
+            <div class="border-bottom mb-3 py-2">
+              <h2 className="fw-bold">Publikasi Kegiatan Desa Panjeng</h2>
+              <p>Masukkan data sesuai dengan data pribadi perangkat Desa Panjeng!</p>
+            </div>
+            <form action="">
+              <p className="fw-bold mb-2">Foto Kegiatan dan Judul Kegiatan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="file" id="formFile" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="namaLengkap" placeholder="Judul Kegiatan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+              </div>
+              <p className="fw-bold mb-2">Tempat dan Tanggal Pelaksanaan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="tempatLahir" placeholder="Tempat Pelaksanaan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="date" id="tanggalLahir" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+              </div>
+              <p className="fw-bold mb-2">Deskripsi Kegiatan</p>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: "100px" }}></textarea>
+                <label for="floatingTextarea2"></label>
+              </div>
+            </form>
+            <div class="text-end my-4">
+              <button type="button" class="btn btn-primary px-4 shadow-sm">Simpan data</button>
+            </div>
           </div>
         </div>
       </div>
@@ -272,35 +353,81 @@ const Modal = {
   ),
   ModalTambahGaleri: () => (
     <div class="modal fade" id="tambahGaleri" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-black">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Galeri Desa</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-6 fw-bold text-capitalize" id="exampleModalLabel">galeri desa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style={{ fontSize: '15px' }}></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body px-5 py-3">
+            <div class="border-bottom mb-3 py-2">
+              <h2 className="fw-bold">Galeri Desa Panjeng</h2>
+              <p>Masukkan data sesuai dengan data pribadi perangkat Desa Panjeng!</p>
+            </div>
             <form action="">
-              <div class="mb-3">
-                <label for="formFile" class="form-label">Masukkan Foto Kegiatan</label>
-                <input class="form-control" type="file" id="formFile" />
+              <p className="fw-bold mb-2">Foto Kegiatan dan Judul Kegiatan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="file" id="formFile" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="namaLengkap" placeholder="Judul Kegiatan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="namaKegiatan" class="form-label">Nama Kegiatan</label>
-                <input class="form-control" type="text" id="namaKegiatan" />
-              </div>
-              <div class="mb-3">
-                <label for="tempatKegiatan" class="form-label">Tempat Kegiatan</label>
-                <input class="form-control" type="text" id="tempatKegiatan" />
-              </div>
-              <div class="mb-3">
-                <label for="tanggalKegiatan" class="form-label">Tanggal Pelaksanaan</label>
-                <input class="form-control" type="date" id="tanggalKegiatan" />
+              <p className="fw-bold mb-2">Tempat dan Tanggal Pelaksanaan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="tempatLahir" placeholder="Tempat Pelaksanaan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="date" id="tanggalLahir" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
               </div>
             </form>
+            <div class="text-end my-4">
+              <button type="button" class="btn btn-primary px-4 shadow-sm">Simpan data</button>
+            </div>
           </div>
-          <div class="modal-footer">
-            {/* <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> */}
-            <button type="button" class="btn btn-primary">Tambahkan</button>
+        </div>
+      </div>
+    </div>
+  ),
+  ModalEditGaleri: () => (
+    <div class="modal fade" id="editGaleri" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content text-black">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6 fw-bold text-capitalize" id="exampleModalLabel">galeri desa</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style={{ fontSize: '15px' }}></button>
+          </div>
+          <div class="modal-body px-5 py-3">
+            <div class="border-bottom mb-3 py-2">
+              <h2 className="fw-bold">Galeri Desa Panjeng</h2>
+              <p>Masukkan data sesuai dengan data pribadi perangkat Desa Panjeng!</p>
+            </div>
+            <form action="">
+              <p className="fw-bold mb-2">Foto Kegiatan dan Judul Kegiatan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="file" id="formFile" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="namaLengkap" placeholder="Judul Kegiatan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+              </div>
+              <p className="fw-bold mb-2">Tempat dan Tanggal Pelaksanaan</p>
+              <div class="row gap-2 mb-3 px-2">
+                <div class="col p-1">
+                  <input class="form-control" type="text" id="tempatLahir" placeholder="Tempat Pelaksanaan" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+                <div class="col p-1">
+                  <input class="form-control" type="date" id="tanggalLahir" style={{ backgroundColor: '#f9fafb' }} />
+                </div>
+              </div>
+            </form>
+            <div class="text-end my-4">
+              <button type="button" class="btn btn-primary px-4 shadow-sm">Simpan data</button>
+            </div>
           </div>
         </div>
       </div>

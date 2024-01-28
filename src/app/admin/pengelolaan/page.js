@@ -54,46 +54,7 @@ export default function page({ params }) {
                     <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-pen mr-2 text-gray-400"></i>
-                      Ubah
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
-                      Hapus
-                    </a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>2</th>
-              <td>Sosialisasi pembuatan bibit padi</td>
-              <td>TPS Desa Panjeng</td>
-              <td>3 Maret 2023</td>
-              <td>
-                <ButtonModal.ButtonReview />
-                <Modal.ModalReview />
-              </td>
-              <td>
-                <div class="dropdown no-arrow">
-                  <a
-                    class="dropdown-toggle"
-                    href="#"
-                    role="button"
-                    id="dropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-pen mr-2 text-gray-400"></i>
-                      Ubah
-                    </a>
+                    <ButtonModal.ButtonEditKegiatan />
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">
                       <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
@@ -126,6 +87,7 @@ export default function page({ params }) {
             </ul>
           </nav>
         </div>
+        <Modal.ModalEditKegiatan />
       </div>
 
       <div class="bg-white p-3 my-4 rounded shadow-sm">
@@ -134,8 +96,8 @@ export default function page({ params }) {
         <div class="d-flex justify-content-between align-items-center my-4">
           <form class="d-none d-sm-inline-block form-inline my-2 my-md-0 w-50 navbar-search" >
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Cari surat sesuai dengan nama pengajuan" aria-label="Recipient's username" aria-describedby="button-addon2" />
-              <button class="btn btn-primary" type="button" id="button-addon2">Cari surat</button>
+              <input type="text" class="form-control" placeholder="Cari foto sesuai dengan nama kegiatan" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <button class="btn btn-primary" type="button" id="button-addon2">Cari galeri</button>
             </div>
           </form>
           <ButtonModal.ButtonTambahGaleri />
@@ -175,45 +137,7 @@ export default function page({ params }) {
                     <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-pen mr-2 text-gray-400"></i>
-                      Ubah
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
-                      Hapus
-                    </a>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>2</th>
-              <td>
-                <img src="/gethuk-golan.jpg" width='300px' height='200px' alt="" style={{ objectFit: 'cover' }} />
-              </td>
-              <td>Sosialisasi pembuatan bibit padi</td>
-              <td>TPS Desa Panjeng</td>
-              <td>3 Maret 2023</td>
-              <td>
-                <div class="dropdown no-arrow">
-                  <a
-                    class="dropdown-toggle"
-                    href="#"
-                    role="button"
-                    id="dropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">
-                      <i class="fas fa-pen mr-2 text-gray-400"></i>
-                      Ubah
-                    </a>
+                    <ButtonModal.ButtonEditGaleri />
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">
                       <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
@@ -246,6 +170,7 @@ export default function page({ params }) {
             </ul>
           </nav>
         </div>
+        <Modal.ModalEditGaleri />
       </div>
     </div>
   )
