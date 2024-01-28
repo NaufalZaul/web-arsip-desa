@@ -12,8 +12,8 @@ export default function page({ params }) {
         <div class="d-flex justify-content-between align-items-center my-4">
           <form class="d-none d-sm-inline-block form-inline my-2 my-md-0 w-50 navbar-search" >
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Cari surat sesuai dengan nama pengajuan" aria-label="Recipient's username" aria-describedby="button-addon2" />
-              <button class="btn btn-primary" type="button" id="button-addon2">Cari surat</button>
+              <input type="text" class="form-control" placeholder="Cari kegiatan sesuai nama kegiatan" aria-label="Recipient's username" aria-describedby="button-addon2" />
+              <button class="btn btn-primary" type="button" id="button-addon2">Cari kegiatan</button>
             </div>
           </form>
           <ButtonModal.ButtonTambahKegiatan />

@@ -6,13 +6,11 @@ const ButtonModal = {
   ),
   ButtonEditInformasiDesa: () => (
     <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#editInformasiDesa" style={{ fontSize: '15px' }}>
-      {/* <i class="fas fa-plus mr-2" ></i> */}
       <p className="m-0">Edit Informasi</p>
     </button>
   ),
   ButtonEditFotoKantor: () => (
     <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#editFotoKantor" style={{ fontSize: '15px' }}>
-      {/* <i class="fas fa-plus mr-2"></i> */}
       <p className="m-0">Edit Foto</p>
     </button>
   ),
@@ -21,10 +19,15 @@ const ButtonModal = {
       <p className="m-0">Tambah data</p>
     </button>
   ),
+  ButtonEditPerangkat: () => (
+    <button type="button" className="dropdown-item" data-bs-toggle="modal" data-bs-target="#editPerangkat" style={{ fontSize: '15px' }}>
+      <i class="fas fa-pen mr-2 text-gray-400"></i>
+      Edit
+    </button>
+  ),
   ButtonTambahKegiatan: () => (
-    <button type="button" className="btn btn-info d-flex align-items-center mr-2" data-bs-toggle="modal" data-bs-target="#tambahKegiatan" style={{ fontSize: '15px' }}>
-      <i class="fas fa-plus mr-2"></i>
-      <p className="m-0">Tambah</p>
+    <button type="button" className="btn btn-info mr-2 px-3" data-bs-toggle="modal" data-bs-target="#tambahKegiatan">
+      Tambah data
     </button>
   ),
   ButtonTambahGaleri: () => (

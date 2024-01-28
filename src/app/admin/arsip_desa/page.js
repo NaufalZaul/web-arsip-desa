@@ -92,7 +92,7 @@ export default function page({ params }) {
         </div>
       </div>
 
-      <div class="bg-white rounded shadow-sm mb-4 p-3">
+      {/* <div class="bg-white rounded shadow-sm mb-4 p-3">
         <h2 class="h5 fw-bold mb-0 text-black">Pengajuan Surat</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, nobis!</p>
         <div class="text-center my-4">
@@ -175,7 +175,7 @@ export default function page({ params }) {
             </ul>
           </nav>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 };
