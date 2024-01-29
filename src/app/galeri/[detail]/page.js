@@ -1,3 +1,4 @@
+'use client'
 import Navbar from "@/components/Navbar";
 import Sliders from "@/components/Sliders";
 import data from "@/data/data";

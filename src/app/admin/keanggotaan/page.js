@@ -56,13 +56,13 @@ export default function page(params) {
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-black"></i>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
                     <ButtonModal.ButtonEditPerangkat />
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">
-                      <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
+                      <i class="fas fa-trash-alt mr-2 text-black"></i>
                       Hapus
                     </a>
                   </div>

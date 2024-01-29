@@ -35,10 +35,6 @@ export default function Page() {
             <form>
               <div class="row mb-3">
                 <div class="col">
-                  <label for="nik" class="form-label">NIK</label>
-                  <input type="number" class="form-control" id="nik" aria-describedby="emailHelp" placeholder="34314135245234" />
-                </div>
-                <div class="col">
                   <label for="namaLengkap" class="form-label">Nama lengkap</label>
                   <input type="number" class="form-control" id="namaLengkap" aria-describedby="emailHelp" placeholder="Maulana Ilyas" />
                 </div>
@@ -47,6 +43,25 @@ export default function Page() {
                   <input type="number" class="form-control" id="nomorTelp" aria-describedby="emailHelp" placeholder="089128381989" />
                 </div>
               </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="inputGroupFile01" class="form-label fw-bold">Masukkan Scan KTP</label>
+                  <input type="file" class="form-control w-100" id="inputGroupFile01" />
+                </div>
+                <div class="col">
+                  <label for="inputGroupFile01" class="form-label fw-bold">Masukkan Scan Surat RT</label>
+                  <input type="file" class="form-control w-100" id="inputGroupFile02" />
+                </div>
+                <div class="col">
+                  <label for="inputGroupFile01" class="form-label fw-bold">Masukkan Scan KK</label>
+                  <input type="file" class="form-control w-100" id="inputGroupFile02" />
+                </div>
+              </div>
+              {/* 
+                <div class="col">
+                  <label for="nik" class="form-label">NIK</label>
+                  <input type="number" class="form-control" id="nik" aria-describedby="emailHelp" placeholder="34314135245234" />
+                </div>
               <div class="row mb-3">
                 <div class="col">
                   <label for="agama" class="form-label">Agama</label>
@@ -85,6 +100,7 @@ export default function Page() {
                   <input type="email" class="form-control" id="kabupaten" aria-describedby="emailHelp" placeholder="Ponorogo" />
                 </div>
               </div>
+              */}
               <div class="mb-3">
                 <label for="keperluan" class="form-label">Keperluan pengajuan</label>
                 <div class="form-floating">

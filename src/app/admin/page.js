@@ -106,9 +106,12 @@ export default function page() {
                 <th scope="col">keperluan</th>
                 <th scope="col">jenis surat</th>
                 <th scope="col">tanggal</th>
-                <th scope="col">status</th>
-                <th scope="col">surat</th>
+                <th scope="col">KTP</th>
+                <th scope="col">KK</th>
+                <th scope="col">Surat RT</th>
                 <th scope="col"></th>
+                {/* <th scope="col">status</th> */}
+                {/* <th scope="col">surat</th> */}
               </tr>
             </thead>
             <tbody>
@@ -118,7 +121,9 @@ export default function page() {
                 <td>Surat Perijinan</td>
                 <td>Surat Ijin Buka Usaha</td>
                 <td>3 Maret 2023</td>
-                <td>Diproses</td>
+                {/* <td>Diproses</td> */}
+                <td><a href="http://">lihat surat</a></td>
+                <td><a href="http://">lihat surat</a></td>
                 <td><a href="http://">lihat surat</a></td>
                 <td>
                   <div class="dropdown no-arrow">
@@ -131,43 +136,12 @@ export default function page() {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-black"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
                       <PrintPDF />
                       <a class="dropdown-item" href="#">
-                        <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
-                        Hapus
-                      </a>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">1</th>
-                <td>Naufal Zaul Karim</td>
-                <td>Surat Perijinan</td>
-                <td>Surat Ijin Buka Usaha</td>
-                <td>3 Maret 2023</td>
-                <td>Diproses</td>
-                <td><a href="http://">lihat surat</a></td>
-                <td>
-                  <div class="dropdown no-arrow">
-                    <a
-                      class="dropdown-toggle"
-                      href="#"
-                      role="button"
-                      id="dropdownMenuLink"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <PrintPDF />
-                      <a class="dropdown-item" href="#">
-                        <i class="fas fa-trash-alt mr-2 text-gray-400"></i>
+                        <i class="fas fa-trash-alt mr-2 text-black"></i>
                         Hapus
                       </a>
                     </div>
